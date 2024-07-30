@@ -1,0 +1,49 @@
+{
+  "name": "gsv-play-highlighter",
+  "displayName": "gsv-play-highlighter",
+  "description": "A VSCode extension for highlighting .gsv and .play files",
+  "version": "0.0.1",
+  "publisher": "19b499fa-de55-6d99-ad77-1862122e66f8",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "gsv",
+        "aliases": ["GSV", "gsv"],
+        "extensions": [".gsv", ".gsv.log"],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "play",
+        "aliases": ["PLAY", "play"],
+        "extensions": [".play", ".play.log"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "gsv",
+        "scopeName": "source.play",
+        "path": "./syntaxes/play.tmLanguage.json"
+      },
+      {
+        "language": "play",
+        "scopeName": "source.play",
+        "path": "./syntaxes/play.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "GSV Play Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gsv-play-theme-color-theme.json"
+      }
+    ]
+  }
+ 
+}
