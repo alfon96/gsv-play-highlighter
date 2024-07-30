@@ -2,7 +2,7 @@
   "name": "gsv-play-highlighter",
   "displayName": "gsv-play-highlighter",
   "description": "A VSCode extension for highlighting .gsv and .play files",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "AlfonFalcone",
   "engines": {
     "vscode": "^1.91.0"
