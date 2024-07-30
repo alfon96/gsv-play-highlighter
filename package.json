@@ -3,9 +3,13 @@
   "displayName": "gsv-play-highlighter",
   "description": "A VSCode extension for highlighting .gsv and .play files",
   "version": "0.0.1",
-  "publisher": "19b499fa-de55-6d99-ad77-1862122e66f8",
+  "publisher": "AlfonFalcone",
   "engines": {
     "vscode": "^1.91.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alfon96/gsv-play-highlighter.git"
   },
   "categories": [
     "Programming Languages"
@@ -14,14 +18,26 @@
     "languages": [
       {
         "id": "gsv",
-        "aliases": ["GSV", "gsv"],
-        "extensions": [".gsv", ".gsv.log"],
+        "aliases": [
+          "GSV",
+          "gsv"
+        ],
+        "extensions": [
+          ".gsv",
+          ".gsv.log"
+        ],
         "configuration": "./language-configuration.json"
       },
       {
         "id": "play",
-        "aliases": ["PLAY", "play"],
-        "extensions": [".play", ".play.log"],
+        "aliases": [
+          "PLAY",
+          "play"
+        ],
+        "extensions": [
+          ".play",
+          ".play.log"
+        ],
         "configuration": "./language-configuration.json"
       }
     ],
@@ -43,7 +59,18 @@
         "uiTheme": "vs-dark",
         "path": "./themes/gsv-play-theme-color-theme.json"
       }
+    ],
+    "iconThemes": [
+      {
+        "id": "gsvPlayIcons",
+        "label": "GSV Play Icons",
+        "path": "./icons/gsv-play-icons-theme.json"
+      }
     ]
+  },
+  "main": "./src/extension.js",
+  "scripts": {
+    "vscode:prepublish": "echo No compilation necessary for JavaScript",
+    "compile": "echo No compilation necessary for JavaScript"
   }
- 
 }

@@ -1,0 +1,25 @@
+{
+  "iconDefinitions": {
+    "gsvIcon": {
+      "iconPath": "./gsv-icon.png"
+    },
+    "playIcon": {
+      "iconPath": "./play-icon.png"
+    },
+    "logIcon": {
+      "iconPath": "./log-icon.png"
+    }
+  },
+  "fileExtensions": {
+    "gsv": "gsvIcon",
+    "gsv.log": "logIcon",
+    "play": "playIcon",
+    "play.log": "logIcon"
+  },
+  "languageIds": {
+    "gsv": "gsvIcon",
+    "play": "playIcon",
+    "gsv.log": "logIcon",
+    "play.log": "logIcon"
+  }
+}
