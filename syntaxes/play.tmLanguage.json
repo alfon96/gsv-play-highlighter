@@ -1,110 +1,108 @@
 {
-    "scopeName": "source.play",
-    "patterns": [
-        {
-            "name": "entity.name.mucrm",
-            "match": "\\bMUCRM"
-          },
-          {
-            "name": "entity.name.recipient",
-            "match": "(?<=MUCRM)[A-Za-z0-9]+(?=\\\\r&)"
-          },
-          {
-            "name": "entity.name.sender",
-            "match": "\\.[A-Za-z0-9]+(?=\\\\r&)"
-          },
+  "scopeName": "source.play",
 
-        {
-            "name": "entity.name.script",
-            "match": "\\bscript retriever:  ~[a-zA-Z0-9_/]+\\.py\\b"
-          },   
-          {
-            "name": "entity.name.xlog",
-            "match": "DCX\\+\\+{\\=xlog_mode}"
-        },  
-        {
-            "name": "entity.name.xlog",
-            "match": "xlog_mode"
-        },     
-        {
-            "name": "entity.name.import",
-            "match": "import"
-        },   
-        {
-            "name": "entity.name.preprocInitialize",
-            "match": "''preproc|''Preproc|''initialize:|''Initialize:|''end|''End"
-        },   
-        {
-            "name": "entity.name.libs",
-            "match": "sys|os|xlog_dcx|Log report|Conversations/s|Transactions/s|Errors found|Python errors found|No match counter|Messages compared|Number of Timeouts|Filename|Sent at|Conversations|Ratio|Total duration|Parse duration|Wait duration|Transactions parsed|Transactions|Messages Out|Messages in|Bytes out|Bytes in|Message|Size|T. headers|Reply needed yes|Received at|Match|Comment"
-        },   
-        {
-            "name": "entity.name.path",
-            "match": "\/tmp\/myOtf\/regression(?:\/[^\/\\s]+)+"
-        }, 
-        
-        {
-            "name": "entity.name.functions",
-            "match": "replay_from_file"
-        },  
-        {
-            "name": "entity.name.messageLogs",
-            "match": "'Message Injection|''conversation: play|''Conversation: play"
-        },  
+  "patterns": [
+    {
+      "name": "entity.name.mucrm",
+      "match": "\\bMUCRM"
+    },
+    {
+      "name": "entity.name.recipient",
+      "match": "(?<=MUCRM)[A-Za-z0-9]+(?=\\\\r&)"
+    },
+    {
+      "name": "entity.name.sender",
+      "match": "\\.[A-Za-z0-9]+(?=\\\\r&)"
+    },
 
     {
-        "name": "constant.numeric.datetime",
-        "match": "\\b\\d{4}:\\d{2}:\\d{2}:\\d{2}:\\d{2}:\\d{2}\\b|(\\d{2}:\\d{2}:\\d{2}\\.\\d{6})\\s*(-)\\s*(\\d{2}\\s+\\w+\\s+\\d{4})"
+      "name": "entity.name.script",
+      "match": "\\bscript retriever:  ~[a-zA-Z0-9_/]+\\.py\\b"
     },
     {
-        "name": "keyword.control.play",
-        "match": "[A-Z]{3}(?=\\+)"
+      "name": "entity.name.xlog",
+      "match": "DCX\\+\\+{\\=xlog_mode}"
     },
     {
-        "name": "entity.name.message",
-        "match": "(\\+[A-Z]{6}):"
+      "name": "entity.name.xlog",
+      "match": "xlog_mode"
     },
     {
-        "name": "entity.name.response",
-       "match": "''Response:"
+      "name": "entity.name.import",
+      "match": "import"
+    },
+    {
+      "name": "entity.name.preprocInitialize",
+      "match": "''preproc|''Preproc|''initialize:|''Initialize:|''end|''End"
+    },
+    {
+      "name": "entity.name.libs",
+      "match": "sys|os|xlog_dcx|Log report|Conversations/s|Transactions/s|Errors found|Python errors found|No match counter|Messages compared|Number of Timeouts|Filename|Sent at|Conversations|Ratio|Total duration|Parse duration|Wait duration|Transactions parsed|Transactions|Messages Out|Messages in|Bytes out|Bytes in|Message|Size|T. headers|Reply needed yes|Received at|Match|Comment"
+    },
+    {
+      "name": "entity.name.path",
+      "match": "/tmp/myOtf/regression(?:/[^/\\s]+)+"
     },
 
-    
     {
-        "name": "entity.name.digit",
-        "match": "\\b[0-9]+\\b"
+      "name": "entity.name.functions",
+      "match": "replay_from_file"
     },
     {
-        "name": "keyword.name.recloc",
-        "match": "\\b[A-Z0-9]{6}\\b"
+      "name": "entity.name.messageLogs",
+      "match": "'Message Injection|''conversation: play|''Conversation: play"
+    },
+
+    {
+      "name": "constant.numeric.datetime",
+      "match": "\\b\\d{4}:\\d{2}:\\d{2}:\\d{2}:\\d{2}:\\d{2}\\b|(\\d{2}:\\d{2}:\\d{2}\\.\\d{6})\\s*(-)\\s*(\\d{2}\\s+\\w+\\s+\\d{4})"
     },
     {
-        "name": "keyword.name.alphanum",
-        "match": "\\b[A-Z0-9]{2,}\\b"
+      "name": "keyword.control.play",
+      "match": "[A-Z]{3}(?=\\+)"
     },
     {
-        "name": "punctuation.separator.semicolon",
-        "match": ":"
+      "name": "entity.name.message",
+      "match": "(\\+[A-Z]{6}):"
     },
     {
-        "name": "punctuation.separator.plus",
-        "match": "\\+"
+      "name": "entity.name.response",
+      "match": "''Response:"
+    },
+
+    {
+      "name": "entity.name.digit",
+      "match": "\\b[0-9]+\\b"
     },
     {
-        "name": "punctuation.separator.wildcard",
-        "match": "\\*|\\.\\*"
+      "name": "keyword.name.recloc",
+      "match": "\\b[A-Z0-9]{6}\\b"
     },
     {
-        "name": "punctuation.separator.terminator",
-        "match": "\\\\r&|\\\\n&|'&?|&"
+      "name": "keyword.name.alphanum",
+      "match": "\\b[A-Z0-9]{2,}\\b"
     },
     {
-        "name": "punctuation.separator.quote",
-        "match": "\"|=|-"
+      "name": "punctuation.separator.semicolon",
+      "match": ":"
+    },
+    {
+      "name": "punctuation.separator.plus",
+      "match": "\\+"
+    },
+    {
+      "name": "punctuation.separator.wildcard",
+      "match": "\\*|\\.\\*"
+    },
+    {
+      "name": "punctuation.separator.terminator",
+      "match": "\\\\r&|\\\\n&|'&?|&"
+    },
+    {
+      "name": "punctuation.separator.quote",
+      "match": "\"|=|-"
     }
-
-    ],
-    "repository": {},
-    "name": "play"
-  }
-  
+  ],
+  "repository": {},
+  "name": "play"
+}

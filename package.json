@@ -61,7 +61,13 @@
       }
     ]
   },
-  "main": "./src/extension.js",
+  "commands": [
+    {
+      "command": "extension.updateSettings",
+      "title": "Update Settings"
+    }
+  ],
+  "main": "./src/updateSettings.js",
   "scripts": {
     "vscode:prepublish": "echo No compilation necessary for JavaScript",
     "compile": "echo No compilation necessary for JavaScript"

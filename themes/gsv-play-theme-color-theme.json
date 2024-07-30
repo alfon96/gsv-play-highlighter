@@ -1,4 +1,171 @@
 {
+  "name": "GSV Play Theme",
+  "colors": {},
+  "tokenColors": [
+    {
+      "scope": "keyword.control.gsv",
+      "settings": {
+        "foreground": "#ffa200" // Red color for GSV keywords
+      }
+    },
+    {
+      "scope": "entity.name.script",
+      "settings": {
+        "foreground": "#fff950",
+        "fontStyle": "italic  underline" // Gold color for script indications
+      }
+    },
+    {
+      "scope": "entity.name.path",
+      "settings": {
+        "foreground": "#27ff06",
+        "fontStyle": "italic" // Gold color for script indications
+      }
+    },
+    {
+      "scope": "punctuation.separator.quote",
+      "settings": {
+        "foreground": "#ff00ea",
+        "fontStyle": " " // Gold color for script indications
+      }
+    },
+    {
+      "scope": "keyword.control.play",
+      "settings": {
+        "foreground": "#bb00ff" // Red color for PLAY keywords
+      }
+    },
+    {
+      "scope": "keyword.name.recloc",
+      "settings": {
+        "foreground": "#00ffff" // Red color for PLAY keywords
+      }
+    },
+    {
+      "scope": "keyword.name.alphanum",
+      "settings": {
+        "foreground": "#bcffff" // Red color for PLAY keywords
+      }
+    },
+    {
+      "scope": "entity.name.xlogVar",
+      "settings": {
+        "foreground": "#00bfff" // Green color for message names
+      }
+    },
+    {
+      "scope": "entity.name.import",
+      "settings": {
+        "foreground": "#ffee03",
+        "fontStyle": "bold" // Green color for message names
+      }
+    },
+    {
+      "scope": "entity.name.preprocInitialize",
+      "settings": {
+        "foreground": "#ff00e6"
+      }
+    },
+    {
+      "scope": "entity.name.messageLogs",
+      "settings": {
+        "foreground": "#e600ff"
+      }
+    },
+    {
+      "scope": "entity.name.libs",
+      "settings": {
+        "foreground": "#00ffae",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "entity.name.functions",
+      "settings": {
+        "foreground": "#00d9ff"
+      }
+    },
+    {
+      "scope": "entity.name.message",
+      "settings": {
+        "foreground": "#ff00b7" // Green color for message names
+      }
+    },
+    {
+      "scope": "entity.name.xlog",
+      "settings": {
+        "foreground": "#00ffae",
+        "fontStyle": "italic " // Green color for message names
+      }
+    },
+
+    {
+      "scope": "entity.name.mucrm",
+      "settings": {
+        "foreground": "#aa00ff", // Orange color for MUCRM
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "entity.name.recipient",
+      "settings": {
+        "foreground": "#ffee00",
+        "fontStyle": "italic" // Green color for content between MUCRM and \r or &
+      }
+    },
+    {
+      "scope": "entity.name.sender",
+      "settings": {
+        "foreground": "#0080ff",
+        "fontStyle": "italic" // Green color for content between MUCRM and \r or &
+      }
+    },
+
+    {
+      "scope": "entity.name.response",
+      "settings": {
+        "foreground": "#ff045c" // Green color for message names
+      }
+    },
+    {
+      "scope": "entity.name.digit",
+      "settings": {
+        "foreground": "#91ff00" // Green color for message names
+      }
+    },
+    {
+      "scope": "punctuation.separator.semicolon",
+      "settings": {
+        "foreground": "#ff00b7" // Blue color for semicolons
+      }
+    },
+    {
+      "scope": "constant.numeric.datetime",
+      "settings": {
+        "foreground": "#00c3ff",
+        "fontStyle": "underline" // Teal color for datetime
+      }
+    },
+    {
+      "scope": "punctuation.separator.plus",
+      "settings": {
+        "foreground": "#ffee00" // Blue color for semicolons
+      }
+    },
+    {
+      "scope": "punctuation.separator.wildcard",
+      "settings": {
+        "foreground": "#ff8400" // Blue color for semicolons
+      }
+    },
+    {
+      "scope": "punctuation.separator.terminator",
+      "settings": {
+        "foreground": "#ff045c" // Blue color for semicolons
+      }
+    }
+  ],
+
   "iconDefinitions": {
     "gsvIcon": {
       "iconPath": "./gsv-icon.png"
